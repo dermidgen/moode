@@ -1,0 +1,14 @@
+
+           ___   ___   ___ 
+          / _ \ / _ \ |_  |
+         / , _// ___// __/ 
+        /_/|_|/_/   /____/ 
+                                                                        
+       Moode Audio Player
+           Release 2.4
+
+This software is provided for free by 
+the copyright holders and contributors
+and comes with no expressed or implied 
+warranties or any other guarantees.
+

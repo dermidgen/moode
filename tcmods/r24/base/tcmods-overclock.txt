@@ -1,0 +1,11 @@
+force_turbo=1
+arm_freq=1000
+core_freq=500
+
+Pi-1B
+sdram_freq=500
+over_voltage=6
+
+Pi-2B
+sdram_freq=450
+over_voltage=2

@@ -1,0 +1,30 @@
+audio_device_name: BLANK 
+audio_device_dac: BLANK
+audio_device_arch: BLANK
+audio_device_iface: BLANK
+audio_device_other: BLANK
+clock_radio_enabled: No
+clock_radio_playitem: 0
+clock_radio_playname: BLANK
+clock_radio_starttime: 0600 AM
+clock_radio_stoptime: 0700 AM
+clock_radio_volume: 10
+clock_radio_shutdown: No
+play_history_currentsong: BLANK
+play_history_enabled: No
+playlist_display: Yes
+rotary_encoder_enabled: 0
+search_autofocus_enabled: No
+sys_kernel_ver: BLANK
+sys_processor_arch: BLANK
+sys_mpd_ver: BLANK
+time_knob_countup: 0
+theme_color: Alizarin
+volume_curve_factor: 56
+volume_curve_logarithmic: No
+volume_knob_setting: 0
+volume_max_percent: 100
+volume_mixer_name: BLANK
+volume_mixer_type: software
+volume_muted: 0
+volume_warning_limit: 20

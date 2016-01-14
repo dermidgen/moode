@@ -111,7 +111,7 @@
                     height : this.$.data('height') || 200,
                     displayInput : this.$.data('displayinput') == null || this.$.data('displayinput'),
                     displayPrevious : this.$.data('displayprevious'),
-                    fgColor : this.$.data('fgcolor') || '#2980b9',
+                    fgColor : this.$.data('fgcolor') || '#8e44ad',
                     inputColor: this.$.data('inputcolor') || this.$.data('fgcolor') || '#4BBE87',
                     font: this.$.data('font') || 'Arial',
                     fontWeight: this.$.data('font-weight') || 'bold',

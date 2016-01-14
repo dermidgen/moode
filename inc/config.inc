@@ -18,21 +18,36 @@
  *  along with TsunAMP; see the file COPYING.  If not, see
  *  <http://www.gnu.org/licenses/>.
  *
- * Rewrite by Tim Curtis and Andreas Goetz
+ *
+ *	UI-design/JS code by: 	Andrea Coiutti (aka ACX)
+ * PHP/JS code by:			Simone De Gregori (aka Orion)
+ * 
+ * file:							config.inc
+ * version:						1.0
+ *
  */
-
-// DEV parameters
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-// PRD parameters
-// error_reporting(E_ALL ^ E_NOTICE);
-// ini_set('display_errors', 0);
-
-define('MOODE_RELEASE', 'r21'); 			// Current release
-
-define('MOODE_ROOT_PATH', '/var/www' );
-define('MOODE_CONFIG_DB', 'sqlite:' . MOODE_ROOT_PATH . '/db/player.db');
-
-define('MPD_HOST', '127.0.0.1');			// localhost
-define('MPD_TIMEOUT', 5);					// connection timeout
-define('MPD_LIB', '/var/lib/mpd/music/');	// include trailing /
+ 
+// configurazione personale
+// valore produzione su raspberry
+define('ROOTPATH', $_SERVER['HOME'] . '/' ); // default = '/'
+// valore ambiente ACX
+//define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/' ); // default = '/'
+define('DAEMONIP', 'localhost'); // default = 'localhost'
+// DEV debug parameters
+//ini_set('display_errors',1);
+//define('ERRORLEVEL', '-1'); // default = 'E_ALL ^ E_NOTICE'
+//__production
+define('ERRORLEVEL', 'E_ERROR'); // default = 'E_ALL ^ E_NOTICE'
+// configurazione generale
+define ('COMMENTCHAR','#');
+define ('DELSTRING','');
+define ('CONFPATH', ROOTPATH.'inc/mpd.conf');
+define ('DEFCONFPATH', ROOTPATH.'inc/mpd.conf.default');
+define ('NETCONFPATH', ROOTPATH.'inc/network/interfaces');
+define ('NETCONFPATHMANUAL', ROOTPATH.'inc/network/interfaces.manual');
+define ('NETCONFPATHAUTO', ROOTPATH.'inc/network/interfaces.dhcp');
+define ('NETCONFPATHBOOT', ROOTPATH.'inc/network/interfaces.loadatboot');
+//echo '<pre>INCPATH = '.INCPATH.'</pre>';
+// datastore SQLite
+$db = 'sqlite:'.$_SERVER['DOCUMENT_ROOT'].'/db/player.db';
+?>
